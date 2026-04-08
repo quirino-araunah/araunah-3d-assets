@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Araunah 3D Assets — Repositorio</title>
+<title>Araunah 3D Assets</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e0e0e0; padding: 20px; max-width: 1400px; margin: 0 auto; }
@@ -24,11 +24,10 @@
     border: 1px solid #2a2a2a;
     border-radius: 12px;
     overflow: hidden;
-    transition: border-color 0.2s;
+    transition: border-color 0.2s, transform 0.2s;
   }
-  .card:hover { border-color: #60a5fa; }
-  .card img { width: 100%; height: 200px; object-fit: contain; background: #fff; }
-  .card img.dark { background: #111; }
+  .card:hover { border-color: #60a5fa; transform: translateY(-2px); }
+  .card img { width: 100%; height: 280px; object-fit: cover; background: #111; }
   .card .info { padding: 12px; }
   .card .name { font-weight: 700; color: #fff; font-size: 14px; }
   .card .meta { font-size: 11px; color: #888; margin-top: 4px; }
@@ -38,83 +37,60 @@
   .badge.tripo { background: #1b5e20; color: #a5d6a7; }
   .badge.cc0 { background: #0d47a1; color: #90caf9; }
   .badge.sketchfab { background: #4a148c; color: #ce93d8; }
-  .badge.github { background: #e65100; color: #ffcc80; }
 </style>
 </head>
 <body>
 
 <h1>Araunah 3D Assets</h1>
-<p class="subtitle">Repositorio centralizado — 29 modelos 3D + 36 thumbnails</p>
+<p class="subtitle">Catalogo de Equipamentos — Tratamento de Agua</p>
 
 <div class="stats">
-  <div class="stat"><div class="num">18</div><div class="lbl">Tripo3D (nossos)</div></div>
-  <div class="stat"><div class="num">7</div><div class="lbl">Poly Haven (CC0)</div></div>
-  <div class="stat"><div class="num">2</div><div class="lbl">Kenney (CC0)</div></div>
-  <div class="stat"><div class="num">2</div><div class="lbl">GitHub</div></div>
-  <div class="stat"><div class="num">18</div><div class="lbl">Sketchfab (thumbs)</div></div>
+  <div class="stat"><div class="num">18</div><div class="lbl">Equipamentos</div></div>
+  <div class="stat"><div class="num">18</div><div class="lbl">Modelos 3D (Tripo3D)</div></div>
+  <div class="stat"><div class="num">18</div><div class="lbl">Sketchfab refs</div></div>
 </div>
 
-<!-- TRIPO3D -->
+<!-- CATALOGO -->
 <div class="section">
-  <div class="section-title">Tripo3D — Nossos Modelos (image-to-3D foto real)</div>
+  <div class="section-title">Catalogo Equipamentos</div>
   <div class="grid">
-    <div class="card"><img src="thumbnails/catalogo/poco.jpeg"><div class="info"><div class="name">Poco Artesiano <span class="badge tripo">TRIPO</span></div><div class="meta">poco_ai.glb — 12MB</div></div></div>
-    <div class="card"><img src="thumbnails/catalogo/motobomba.jpeg"><div class="info"><div class="name">Motobomba <span class="badge tripo">TRIPO</span></div><div class="meta">bomba_ai.glb — 15MB</div></div></div>
-    <div class="card"><img src="thumbnails/catalogo/filtro_multimidia.jpeg"><div class="info"><div class="name">Filtro Multimidia <span class="badge tripo">TRIPO</span></div><div class="meta">filtro_ai.glb — 14MB</div></div></div>
-    <div class="card"><img src="thumbnails/catalogo/filtro_zeolita.jpeg"><div class="info"><div class="name">Filtro Zeolita <span class="badge tripo">TRIPO</span></div><div class="meta">zeolita_ai.glb — 13MB</div></div></div>
-    <div class="card"><img src="thumbnails/catalogo/abrandador.jpeg"><div class="info"><div class="name">Abrandador <span class="badge tripo">TRIPO</span></div><div class="meta">abrandador_ai.glb — 15MB</div></div></div>
-    <div class="card"><img src="thumbnails/catalogo/osmose_reversa.jpeg"><div class="info"><div class="name">Osmose Reversa <span class="badge tripo">TRIPO</span></div><div class="meta">osmose_reversa_ai.glb — 15MB</div></div></div>
-    <div class="card"><img src="thumbnails/catalogo/uv_viqua.jpeg"><div class="info"><div class="name">UV VIQUA <span class="badge tripo">TRIPO</span></div><div class="meta">uv_viqua_ai.glb — 13MB</div></div></div>
-    <div class="card"><img src="thumbnails/catalogo/dosador_cloro.jpeg"><div class="info"><div class="name">Dosador Cloro <span class="badge tripo">TRIPO</span></div><div class="meta">dosador_cloro_ai.glb — 12MB</div></div></div>
-    <div class="card"><img src="thumbnails/catalogo/tefen.jpeg"><div class="info"><div class="name">TEFEN MixRite <span class="badge tripo">TRIPO</span></div><div class="meta">tefen_ai.glb — 15MB</div></div></div>
-    <div class="card"><img src="thumbnails/catalogo/aqua4d.jpeg"><div class="info"><div class="name">AQUA4D <span class="badge tripo">TRIPO</span></div><div class="meta">aqua4d_ai.glb — 15MB</div></div></div>
-    <div class="card"><img src="thumbnails/catalogo/exatta.jpeg"><div class="info"><div class="name">EXATTA <span class="badge tripo">TRIPO</span></div><div class="meta">exatta_ai.glb — 15MB</div></div></div>
-    <div class="card"><img src="thumbnails/catalogo/pressurizadora.jpeg"><div class="info"><div class="name">Pressurizadora <span class="badge tripo">TRIPO</span></div><div class="meta">pressurizadora_ai.glb — 15MB</div></div></div>
-    <div class="card"><img src="thumbnails/catalogo/caixa-500L.jpeg"><div class="info"><div class="name">Caixa 500L <span class="badge tripo">TRIPO</span></div><div class="meta">tanque_500L_ai.glb — 14MB</div></div></div>
-    <div class="card"><img src="thumbnails/catalogo/caixa-1000L.jpeg"><div class="info"><div class="name">Caixa 1.000L <span class="badge tripo">TRIPO</span></div><div class="meta">tanque_1000L_ai.glb — 14MB</div></div></div>
-    <div class="card"><img src="thumbnails/catalogo/caixa-2000L.jpeg"><div class="info"><div class="name">Caixa 2.000L <span class="badge tripo">TRIPO</span></div><div class="meta">tanque_2000L_ai.glb — 14MB</div></div></div>
-    <div class="card"><img src="thumbnails/catalogo/caixa-5000L.jpeg"><div class="info"><div class="name">Reserv. 5.000L <span class="badge tripo">TRIPO</span></div><div class="meta">tanque_5000L_ai.glb — 15MB</div></div></div>
-    <div class="card"><img src="thumbnails/catalogo/caixa-10000L.jpeg"><div class="info"><div class="name">Reserv. 10.000L <span class="badge tripo">TRIPO</span></div><div class="meta">tanque_10000L_ai.glb — 15MB</div></div></div>
-    <div class="card"><img src="thumbnails/catalogo/caixa-20000L.jpeg"><div class="info"><div class="name">Reserv. 20.000L <span class="badge tripo">TRIPO</span></div><div class="meta">tanque_20000L_ai.glb — 15MB</div></div></div>
+    <div class="card"><img src="thumbnails/pro/poco_dark.jpeg"><div class="info"><div class="name">Poco Artesiano <span class="badge tripo">3D</span></div><div class="meta">COD: poco | poco_ai.glb 12MB</div><div class="source">Captacao subterranea 50-300m</div></div></div>
+    <div class="card"><img src="thumbnails/pro/motobomba_dark.jpeg"><div class="info"><div class="name">Motobomba <span class="badge tripo">3D</span></div><div class="meta">COD: bomba | bomba_ai.glb 15MB</div><div class="source">Centrifuga multistagio 1-50cv</div></div></div>
+    <div class="card"><img src="thumbnails/pro/filtro_multimidia_dark.jpeg"><div class="info"><div class="name">Filtro Multimidia <span class="badge tripo">3D</span></div><div class="meta">COD: filtro_multimidia | filtro_ai.glb 14MB</div><div class="source">Areia, antracito, cascalho</div></div></div>
+    <div class="card"><img src="thumbnails/pro/filtro_zeolita_dark.jpeg"><div class="info"><div class="name">Filtro Zeolita <span class="badge tripo">3D</span></div><div class="meta">COD: zeolita | zeolita_ai.glb 13MB</div><div class="source">Remove amonia e ferro</div></div></div>
+    <div class="card"><img src="thumbnails/pro/abrandador_dark.jpeg"><div class="info"><div class="name">Abrandador <span class="badge tripo">3D</span></div><div class="meta">COD: abrandador | abrandador_ai.glb 15MB</div><div class="source">Resina cationica, reduz dureza</div></div></div>
+    <div class="card"><img src="thumbnails/pro/osmose_reversa_dark.jpeg"><div class="info"><div class="name">Osmose Reversa <span class="badge tripo">3D</span></div><div class="meta">COD: osmose_reversa | osmose_reversa_ai.glb 15MB</div><div class="source">Membranas poliamida 95-99% TDS</div></div></div>
+    <div class="card"><img src="thumbnails/pro/uv_viqua_dark.jpeg"><div class="info"><div class="name">UV VIQUA <span class="badge tripo">3D</span></div><div class="meta">COD: uv_viqua | uv_viqua_ai.glb 13MB</div><div class="source">UV-C 254nm, 99.99% patogenos</div></div></div>
+    <div class="card"><img src="thumbnails/pro/dosador_cloro_dark.jpeg"><div class="info"><div class="name">Dosadora de Cloro <span class="badge tripo">3D</span></div><div class="meta">COD: dosador_cloro | dosador_cloro_ai.glb 12MB</div><div class="source">Peristaltica NaClO 0.5-20 L/h</div></div></div>
+    <div class="card"><img src="thumbnails/pro/tefen_dark.jpeg"><div class="info"><div class="name">TEFEN MixRite 2.5 <span class="badge tripo">3D</span></div><div class="meta">COD: tefen | tefen_ai.glb 15MB</div><div class="source">Dosador proporcional hidraulico</div></div></div>
+    <div class="card"><img src="thumbnails/pro/aqua4d_dark.jpeg"><div class="info"><div class="name">AQUA4D <span class="badge tripo">3D</span></div><div class="meta">COD: aqua4d | aqua4d_ai.glb 15MB</div><div class="source">Tratamento eletromagnetico</div></div></div>
+    <div class="card"><img src="thumbnails/pro/exatta_dark.jpeg"><div class="info"><div class="name">EXATTA <span class="badge tripo">3D</span></div><div class="meta">COD: exatta | exatta_ai.glb 15MB</div><div class="source">Monitor pH, Cl, turbidez</div></div></div>
+    <div class="card"><img src="thumbnails/pro/pressurizadora_dark.jpeg"><div class="info"><div class="name">Pressurizadora <span class="badge tripo">3D</span></div><div class="meta">COD: pressurizadora | pressurizadora_ai.glb 15MB</div><div class="source">Pressao constante VFD/On-Off</div></div></div>
+    <div class="card"><img src="thumbnails/pro/caixa-500L_dark.jpeg"><div class="info"><div class="name">Caixa 500L <span class="badge tripo">3D</span></div><div class="meta">COD: tanque_agua | tanque_500L_ai.glb 14MB</div><div class="source">PEAD 0,90m residencial</div></div></div>
+    <div class="card"><img src="thumbnails/pro/caixa-1000L_dark.jpeg"><div class="info"><div class="name">Caixa 1.000L <span class="badge tripo">3D</span></div><div class="meta">COD: tanque_agua | tanque_1000L_ai.glb 14MB</div><div class="source">PEAD 1,15m padrao</div></div></div>
+    <div class="card"><img src="thumbnails/pro/caixa-2000L_dark.jpeg"><div class="info"><div class="name">Caixa 2.000L <span class="badge tripo">3D</span></div><div class="meta">COD: tanque_agua | tanque_2000L_ai.glb 14MB</div><div class="source">PEAD 1,35m condominios</div></div></div>
+    <div class="card"><img src="thumbnails/pro/caixa-5000L_dark.jpeg"><div class="info"><div class="name">Reserv. 5.000L <span class="badge tripo">3D</span></div><div class="meta">COD: tanque_agua | tanque_5000L_ai.glb 15MB</div><div class="source">PEAD Food Grade 1,80m</div></div></div>
+    <div class="card"><img src="thumbnails/pro/caixa-10000L_dark.jpeg"><div class="info"><div class="name">Reserv. 10.000L <span class="badge tripo">3D</span></div><div class="meta">COD: tanque_agua | tanque_10000L_ai.glb 15MB</div><div class="source">PEAD Industrial 2,10m</div></div></div>
+    <div class="card"><img src="thumbnails/pro/caixa-20000L_dark.jpeg"><div class="info"><div class="name">Reserv. 20.000L <span class="badge tripo">3D</span></div><div class="meta">COD: tanque_agua | tanque_20000L_ai.glb 15MB</div><div class="source">PEAD Heavy Duty 2,50m</div></div></div>
   </div>
 </div>
 
-<!-- POLY HAVEN -->
+<!-- SKETCHFAB REFERENCES -->
 <div class="section">
-  <div class="section-title">Poly Haven — CC0 (dominio publico, uso livre)</div>
+  <div class="section-title">Referencia Sketchfab (modelos alternativos)</div>
   <div class="grid">
-    <div class="card"><div style="height:200px;background:#1a1a1a;display:flex;align-items:center;justify-content:center;color:#666">GLB 3D</div><div class="info"><div class="name">Tubos PVC <span class="badge cc0">CC0</span></div><div class="meta">modular_pipes_plastic_01.glb — 1.5MB</div><div class="source">Valvulas, conexoes, registros, mangueiras</div></div></div>
-    <div class="card"><div style="height:200px;background:#1a1a1a;display:flex;align-items:center;justify-content:center;color:#666">GLB 3D</div><div class="info"><div class="name">Tubos Construcao <span class="badge cc0">CC0</span></div><div class="meta">modular_pipes.glb — 1.6MB</div><div class="source">Encanamento, drenagem, supply</div></div></div>
-    <div class="card"><div style="height:200px;background:#1a1a1a;display:flex;align-items:center;justify-content:center;color:#666">GLB 3D</div><div class="info"><div class="name">Tubos Industriais <span class="badge cc0">CC0</span></div><div class="meta">modular_industrial_pipes_01.glb — 514KB</div><div class="source">Tubulacao fabrica, metal</div></div></div>
-    <div class="card"><div style="height:200px;background:#1a1a1a;display:flex;align-items:center;justify-content:center;color:#666">GLB 3D</div><div class="info"><div class="name">Hidrante <span class="badge cc0">CC0</span></div><div class="meta">fire_hydrant.glb — 1.9MB</div><div class="source">Infraestrutura, valvula municipal</div></div></div>
-    <div class="card"><div style="height:200px;background:#1a1a1a;display:flex;align-items:center;justify-content:center;color:#666">GLB 3D</div><div class="info"><div class="name">Aspersor <span class="badge cc0">CC0</span></div><div class="meta">garden_sprinkler_01.glb — 307KB</div><div class="source">Irrigacao, valvula</div></div></div>
-    <div class="card"><div style="height:200px;background:#1a1a1a;display:flex;align-items:center;justify-content:center;color:#666">GLB 3D</div><div class="info"><div class="name">Tampa Poco Visita <span class="badge cc0">CC0</span></div><div class="meta">water_manhole_cover.glb — 201KB</div><div class="source">Infraestrutura, drenagem</div></div></div>
-    <div class="card"><div style="height:200px;background:#1a1a1a;display:flex;align-items:center;justify-content:center;color:#666">GLB 3D</div><div class="info"><div class="name">Barril Industrial <span class="badge cc0">CC0</span></div><div class="meta">Barrel_02.glb — 78KB</div><div class="source">Armazenamento, tambor</div></div></div>
-  </div>
-</div>
-
-<!-- SKETCHFAB -->
-<div class="section">
-  <div class="section-title">Sketchfab — Thumbnails (precisa conta gratis pra baixar GLB)</div>
-  <div class="grid">
-    <div class="card"><img src="thumbnails/sketchfab/bomba_centrifuga.jpeg" class="dark"><div class="info"><div class="name">Bomba Centrifuga <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">ENGIPROS — CC-BY, 125K tri</div></div></div>
-    <div class="card"><img src="thumbnails/sketchfab/sand_filter_valve.jpeg" class="dark"><div class="info"><div class="name">Sand Filter + Valve <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">tanphan1105</div></div></div>
-    <div class="card"><img src="thumbnails/sketchfab/sand_filter_tank.jpeg" class="dark"><div class="info"><div class="name">Filter Tank <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">tanphan1105</div></div></div>
-    <div class="card"><img src="thumbnails/sketchfab/osmose_reversa_ro.jpeg" class="dark"><div class="info"><div class="name">RO Unit <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">giacar25 — CC-BY</div></div></div>
-    <div class="card"><img src="thumbnails/sketchfab/uv_ro_system.jpeg" class="dark"><div class="info"><div name="name">RO+UV System <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">tanphan1105 (pago)</div></div></div>
-    <div class="card"><img src="thumbnails/sketchfab/dosing_pump.jpeg" class="dark"><div class="info"><div class="name">Dosing Pump <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">lexcru.manan</div></div></div>
-    <div class="card"><img src="thumbnails/sketchfab/mineral_dosing.jpeg" class="dark"><div class="info"><div class="name">Mineral Dosing <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">tanphan1105</div></div></div>
-    <div class="card"><img src="thumbnails/sketchfab/ro_1000lh.jpeg" class="dark"><div class="info"><div class="name">RO 1000L/h <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">tanphan1105</div></div></div>
-    <div class="card"><img src="thumbnails/sketchfab/ro_8m3h_3stage.jpeg" class="dark"><div class="info"><div class="name">RO 8m3/h 3-Stage <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">tanphan1105</div></div></div>
-    <div class="card"><img src="thumbnails/sketchfab/fertigation.jpeg" class="dark"><div class="info"><div class="name">Fertigation System <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">tanphan1105</div></div></div>
-    <div class="card"><img src="thumbnails/sketchfab/filter_7core.jpeg" class="dark"><div class="info"><div class="name">7-Core Filter <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">tanphan1105</div></div></div>
-    <div class="card"><img src="thumbnails/sketchfab/ro_system_emre.jpeg" class="dark"><div class="info"><div class="name">RO System <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">emreabay19001</div></div></div>
-    <div class="card"><img src="thumbnails/sketchfab/inside_ro.jpeg" class="dark"><div class="info"><div class="name">Inside RO <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">ramyaasubramaniam3</div></div></div>
-    <div class="card"><img src="thumbnails/sketchfab/water_treatment_plant.jpeg" class="dark"><div class="info"><div class="name">Water Treatment Plant <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">novusod — 253 likes</div></div></div>
-    <div class="card"><img src="thumbnails/sketchfab/water_treatment_plant2.jpeg" class="dark"><div class="info"><div class="name">Limnos WTP <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">Geomeletitiki SA</div></div></div>
-    <div class="card"><img src="thumbnails/sketchfab/pressure_booster_pump.jpeg" class="dark"><div class="info"><div class="name">Pressure Booster <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">Dasamura</div></div></div>
-    <div class="card"><img src="thumbnails/sketchfab/water_tank_industrial.jpeg" class="dark"><div class="info"><div class="name">Water Tank Tower <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">Deepak Singh</div></div></div>
-    <div class="card"><img src="thumbnails/sketchfab/water_reservoir.jpeg" class="dark"><div class="info"><div class="name">Water Reservoir <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">abhayexe — 292 likes</div></div></div>
+    <div class="card"><img src="thumbnails/sketchfab/bomba_centrifuga.jpeg"><div class="info"><div class="name">Bomba Centrifuga <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">ENGIPROS — CC-BY</div></div></div>
+    <div class="card"><img src="thumbnails/sketchfab/sand_filter_valve.jpeg"><div class="info"><div class="name">Sand Filter + Valve <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">tanphan1105</div></div></div>
+    <div class="card"><img src="thumbnails/sketchfab/osmose_reversa_ro.jpeg"><div class="info"><div class="name">RO Unit <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">giacar25 — CC-BY</div></div></div>
+    <div class="card"><img src="thumbnails/sketchfab/uv_ro_system.jpeg"><div class="info"><div class="name">RO+UV System <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">tanphan1105</div></div></div>
+    <div class="card"><img src="thumbnails/sketchfab/dosing_pump.jpeg"><div class="info"><div class="name">Dosing Pump <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">lexcru.manan</div></div></div>
+    <div class="card"><img src="thumbnails/sketchfab/mineral_dosing.jpeg"><div class="info"><div class="name">Mineral Dosing <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">tanphan1105</div></div></div>
+    <div class="card"><img src="thumbnails/sketchfab/ro_1000lh.jpeg"><div class="info"><div class="name">RO 1000L/h <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">tanphan1105</div></div></div>
+    <div class="card"><img src="thumbnails/sketchfab/ro_8m3h_3stage.jpeg"><div class="info"><div class="name">RO 8m3/h 3-Stage <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">tanphan1105</div></div></div>
+    <div class="card"><img src="thumbnails/sketchfab/fertigation.jpeg"><div class="info"><div class="name">Fertigation System <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">tanphan1105</div></div></div>
+    <div class="card"><img src="thumbnails/sketchfab/filter_7core.jpeg"><div class="info"><div class="name">7-Core Filter <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">tanphan1105</div></div></div>
+    <div class="card"><img src="thumbnails/sketchfab/water_treatment_plant.jpeg"><div class="info"><div class="name">Water Treatment Plant <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">novusod — 253 likes</div></div></div>
+    <div class="card"><img src="thumbnails/sketchfab/water_reservoir.jpeg"><div class="info"><div class="name">Water Reservoir <span class="badge sketchfab">SKETCHFAB</span></div><div class="meta">abhayexe — 292 likes</div></div></div>
   </div>
 </div>
 
